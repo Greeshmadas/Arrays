@@ -17,10 +17,12 @@ int main()
 			count++;
 
 	}
-	printf("the number of occurance f %d in the given array is %d\n",num,count);
-
-
-
-
-
+	if(0 == count)
+	{
+		printf("%d does not exist in array\n",num);
+	}
+	else
+	{
+		printf("Number %d is found in the given array %d time(s)\n",num,count);	
+	}
 }
